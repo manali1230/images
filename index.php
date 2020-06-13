@@ -1,12 +1,12 @@
 <html>
 <body>
 <h1>LOCKDOWN</h1>
-<h5><b>We should go out but safely</b></h5>
+<h3>We should go out but safely</h3>
 <?php
-   $firstline=`head -n1 path.txt`;          
-   $path_img="https://".$firstline."/open.png";
+   $cloudant_url=`head -n1 path.txt`;          
+   $img_path="https://".$cloudant_url."/open.png";
    echo "<br>";
-   echo "<img src='{$path_img}' width=100 height=100>";
+   echo "<img src='{$img_path}' width=100 height=100>";
 ?>
 </body>
 </html>
